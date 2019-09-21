@@ -4,7 +4,7 @@ Set-Theme Paradox
 
 function repos { Set-Location C:\Users\kaept\source\repos }
 function vyr { Set-Location C:\Users\kaept\source\repos\kaep7n\vyr }
-function bifröst { Set-Location C:\Users\kaept\source\repos\kaep7n\bifr-st }
+function bifr-st { Set-Location C:\Users\kaept\source\repos\kaep7n\bifr-st }
 
 function open-visual-studio() {
     param(
