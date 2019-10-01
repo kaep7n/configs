@@ -1,6 +1,11 @@
-Import-Module posh-git
-Import-Module oh-my-posh
-Set-Theme Paradox
+$runningInVsCode = $env:TERM_PROGRAM -eq 'vscode'
+
+if(!$runningInVsCode)
+{
+    Import-Module posh-git
+    Import-Module oh-my-posh
+    Set-Theme Paradox
+}
 
 function repos { Set-Location C:\Users\kaept\source\repos }
 function vyr { Set-Location C:\Users\kaept\source\repos\kaep7n\vyr }
