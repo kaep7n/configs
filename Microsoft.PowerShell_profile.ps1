@@ -1,6 +1,6 @@
-$runningInVsCode = $env:TERM_PROGRAM -eq 'vscode'
+$runningInFluentTerminal = $env:TERM_PROGRAM -eq 'FluentTerminal'
 
-if(!$runningInVsCode)
+if($runningInFluentTerminal)
 {
     Import-Module posh-git
     Import-Module oh-my-posh
