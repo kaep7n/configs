@@ -28,7 +28,8 @@
     cb = checkout -b
     ca = commit -a --amend -C HEAD
     ci = commit -a -v
-	cm = commit -a -m
+	cm = commit -m
+    cma = commit -a -m
     co = checkout
     di = diff
     ll = log --pretty=format:"%C(yellow)%h%Cred%d\\ %Creset%s%Cblue\\ [%cn]" --decorate --numstat
@@ -42,3 +43,5 @@
 	p = push
     un = reset --hard HEAD  
     uh = reset --hard HEAD^
+[credential]
+	helper = wincred
