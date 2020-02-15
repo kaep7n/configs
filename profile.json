@@ -7,11 +7,16 @@
 
   "defaultProfile": "{61c54bbd-c2c6-5271-96e7-009a87ff44bf}",
 
+  "initialCols": 150,
+  "initialRows": 50,
+
   "profiles": {
     "defaults": {
       "colorScheme": "Night Owl",
       "fontFace": "Fira Code",
-      "fontSize": 10
+      "fontSize": 10,
+      "useAcrylic": true,
+      "acrylicOpacity": 0.7
     },
     "list": [
       {
