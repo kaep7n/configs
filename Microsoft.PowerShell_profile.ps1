@@ -1,6 +1,4 @@
-$runningInFluentTerminal = $env:TERM_PROGRAM -eq 'FluentTerminal'
-
-if($runningInFluentTerminal)
+if($env:WT_SESSION)
 {
     Import-Module posh-git
     Import-Module oh-my-posh
@@ -10,6 +8,8 @@ if($runningInFluentTerminal)
 function repos { Set-Location C:\Users\kaept\source\repos }
 function vyr { Set-Location C:\Users\kaept\source\repos\kaep7n\vyr }
 function bifr-st { Set-Location C:\Users\kaept\source\repos\kaep7n\bifr-st }
+function midgard { Set-Location C:\Users\kaept\source\repos\kaep7n\midgard }
+function funky { Set-Location C:\Users\kaept\source\repos\kaep7n\funky }
 
 function open-visual-studio() {
     param(
