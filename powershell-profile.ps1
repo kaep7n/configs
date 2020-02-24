@@ -1,4 +1,4 @@
-if($env:WT_SESSION)
+if($env:WT_SESSION -and $env:TERM_PROGRAM -ne 'vscode')
 {
     Import-Module posh-git
     Import-Module oh-my-posh
