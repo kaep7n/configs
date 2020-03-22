@@ -16,9 +16,9 @@
 [mergetool "vsdiffmerge"]
 	keepbackup = false
 [user]
-	name = Matthias Hillermeier
+	name = kaeptn
 [user]
-	email = m.hillermeier@adestis.de
+	email = kaeptn@outlook.com
 [alias]
     aa = add --all
     bv = branch -vv
