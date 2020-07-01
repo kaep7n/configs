@@ -1,21 +1,22 @@
 if($env:WT_SESSION -and $env:TERM_PROGRAM -ne 'vscode')
 {
+    write-host "Import-Module DockerCompletion"
+    Import-Module DockerCompletion
+    write-host "Import-Module posh-git"
     Import-Module posh-git
+    write-host "Import-Module oh-my-posh"
     Import-Module oh-my-posh
+    write-host "Set-Theme Paradox"
     Set-Theme Paradox
 }
 
-function repos { Set-Location C:\Users\kaept\source\repos }
-function vyr { Set-Location C:\Users\kaept\source\repos\kaep7n\vyr }
-function bifr-st { Set-Location C:\Users\kaept\source\repos\kaep7n\bifr-st }
-function midgard { Set-Location C:\Users\kaept\source\repos\kaep7n\midgard }
-function funky { Set-Location C:\Users\kaept\source\repos\kaep7n\funky }
+function repos { Set-Location C:\Users\mh\source\repos }
 
 function open-visual-studio() {
     param(
       [string]$RootDirectory = ''
     )
-    $solutions = Get-ChildItem -recurse -path "$RootDirectory*.sln"
+    $solutions = Get-ChildItem -path "$RootDirectory*.sln" 
     if ($solutions.Count -eq 1) {
       & $solutions.FullName
     }
