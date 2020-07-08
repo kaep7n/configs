@@ -12,11 +12,13 @@
 
   "profiles": {
     "defaults": {
-      "colorScheme": "Dracula",
+      "colorScheme": "Monokai Night",
       "fontFace": "Fira Code",
       "fontSize": 10,
       "useAcrylic": true,
-      "acrylicOpacity": 0.5
+      "acrylicOpacity": 0.7,
+      "backgroundImage": "%USERPROFILE%\\ADESTIS_Black_1920x1080.jpg",
+      "backgroundImageOpacity": 0.3
     },
     "list": [
       {
@@ -129,26 +131,47 @@
       "foreground": "#fffaf4"
     },
     {
-      "name" : "Dracula",
-      "background" : "#282A36",
-      "black" : "#21222C",
-      "blue" : "#BD93F9",
-      "brightBlack" : "#6272A4",
-      "brightBlue" : "#D6ACFF",
-      "brightCyan" : "#A4FFFF",
-      "brightGreen" : "#69FF94",
-      "brightPurple" : "#FF92DF",
-      "brightRed" : "#FF6E6E",
-      "brightWhite" : "#FFFFFF",
-      "brightYellow" : "#FFFFA5",
-      "cyan" : "#8BE9FD",
-      "foreground" : "#F8F8F2",
-      "green" : "#50FA7B",
-      "purple" : "#FF79C6",
-      "red" : "#FF5555",
-      "white" : "#F8F8F2",
-      "yellow" : "#F1FA8C"
-  }
+      "name": "Dracula",
+      "background": "#282A36",
+      "black": "#21222C",
+      "blue": "#BD93F9",
+      "brightBlack": "#6272A4",
+      "brightBlue": "#D6ACFF",
+      "brightCyan": "#A4FFFF",
+      "brightGreen": "#69FF94",
+      "brightPurple": "#FF92DF",
+      "brightRed": "#FF6E6E",
+      "brightWhite": "#FFFFFF",
+      "brightYellow": "#FFFFA5",
+      "cyan": "#8BE9FD",
+      "foreground": "#F8F8F2",
+      "green": "#50FA7B",
+      "purple": "#FF79C6",
+      "red": "#FF5555",
+      "white": "#F8F8F2",
+      "yellow": "#F1FA8C"
+    },
+    {
+      "name": "Monokai Night",
+      "background": "#1f1f1f",
+      "foreground": "#f8f8f8",
+      "black": "#1f1f1f",
+      "blue": "#6699df",
+      "cyan": "#e69f66",
+      "green": "#a6e22e",
+      "purple": "#ae81ff",
+      "red": "#f92672",
+      "white": "#f8f8f2",
+      "yellow": "#e6db74",
+      "brightBlack": "#75715e",
+      "brightBlue": "#66d9ef",
+      "brightCyan": "#e69f66",
+      "brightGreen": "#a6e22e",
+      "brightPurple": "#ae81ff",
+      "brightRed": "#f92672",
+      "brightWhite": "#f8f8f2",
+      "brightYellow": "#e6db74"
+    }
   ],
 
   // Add any keybinding overrides to this array.
