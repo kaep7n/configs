@@ -4,7 +4,7 @@
 {
   "$schema": "https://aka.ms/terminal-profiles-schema",
 
-  "defaultProfile": "{61c54bbd-c2c6-5271-96e7-009a87ff44bf}",
+  "defaultProfile": "{574e775e-4f2a-5b96-ac1e-a2962a402336}",
 
   "initialCols": 150,
   "initialRows": 50,
@@ -16,7 +16,6 @@
       "fontSize": 10,
       "useAcrylic": true,
       "acrylicOpacity": 0.7,
-      "backgroundImage": "%USERPROFILE%\\ADESTIS_Black_1920x1080.jpg",
       "backgroundImageOpacity": 0.3
     },
     "list": [
@@ -52,7 +51,7 @@
         "commandline": "C:/Program Files/Git/bin/bash.exe --login",
         "guid": "{14ad203f-52cc-4110-90d6-d96e0f41b64d}",
         "historySize": 9001,
-        "icon" : "C:/Program Files/Git/mingw64/share/git/git-for-windows.ico",
+        "icon": "C:/Program Files/Git/mingw64/share/git/git-for-windows.ico",
         "name": "Git Bash",
         "padding": "0, 0, 0, 0",
         "snapOnInput": true,
@@ -193,5 +192,5 @@
 
   // Add any keybinding overrides to this array.
   // To unbind a default keybinding, set the command to "unbound"
-  "keybindings": [ ]
+  "keybindings": []
 }
