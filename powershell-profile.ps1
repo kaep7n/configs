@@ -6,7 +6,7 @@ if($env:WT_SESSION -and $env:TERM_PROGRAM -ne 'vscode')
     Import-Module -Name Terminal-Icons
     write-host "Import-Module oh-my-posh"
     Import-Module oh-my-posh
-    write-host "Set-Theme jandedobbeleer"
+    write-host "Set-Theme ~/.oh-my-posh.omp.json"
     Set-PoshPrompt -Theme  ~/.oh-my-posh.omp.json
 }
 
