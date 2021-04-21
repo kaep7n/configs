@@ -1,5 +1,7 @@
 if($env:WT_SESSION -and $env:TERM_PROGRAM -ne 'vscode')
 {
+    write-host "Import-Module posh-git"
+    Import-Module posh-git
     write-host "Import-Module DockerCompletion"
     Import-Module DockerCompletion
     write-host "Import-Module Terminal-Icons"
@@ -10,6 +12,7 @@ if($env:WT_SESSION -and $env:TERM_PROGRAM -ne 'vscode')
     Set-PoshPrompt -Theme  ~/.oh-my-posh.omp.json
 }
 
+write-host "Import-Module z"
 Import-Module z
 
 function repos { Set-Location C:\Users\mh\source\repos }
