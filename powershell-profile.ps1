@@ -1,7 +1,5 @@
 if($env:WT_SESSION -and $env:TERM_PROGRAM -ne 'vscode')
 {
-    write-host "Import-Module posh-git"
-    Import-Module posh-git
     write-host "Import-Module DockerCompletion"
     Import-Module DockerCompletion
     write-host "Import-Module Terminal-Icons"
@@ -12,25 +10,21 @@ if($env:WT_SESSION -and $env:TERM_PROGRAM -ne 'vscode')
     Set-PoshPrompt -Theme  ~/.oh-my-posh.omp.json
 }
 
-write-host "Import-Module z"
 Import-Module z
 
-function repos { Set-Location C:\Users\mh\source\repos }
+function repos { Set-Location C:\Users\kaept\source }
 
 function open-visual-studio() {
-    param(
-      [string]$RootDirectory = ''
-    )
-    $solutions = Get-ChildItem -path "$RootDirectory*.sln" 
+    $solutions = Get-Childitem -Path .\ -Filter *.sln -Exclude src* -Recurse -File -Name
     if ($solutions.Count -eq 1) {
-      & $solutions.FullName
+      & $solutions
     }
     elseif ($solutions.Count -eq 0) {
-      write-host "I couldn't find any solution files here!"
+      write-host "no solutions found"
     }
     elseif ($solutions.Count -gt 1) {
-      write-host "I found more than solution. Which one do you want to open?"
-      $solutions | ForEach-Object { write-host " - $($_.FullName)" }
+      write-host "found more than one solution"
+      $solutions | ForEach-Object { write-host " - $($_)" }
     }
   }
   
