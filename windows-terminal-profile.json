@@ -12,7 +12,7 @@
   "profiles": {
     "defaults": {
       "colorScheme": "Monokai Night",
-      "fontFace": "Fira Code",
+      "fontFace": "FiraCode NF",
       "fontSize": 10,
       "useAcrylic": true,
       "acrylicOpacity": 0.7,
