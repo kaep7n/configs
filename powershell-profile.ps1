@@ -10,22 +10,30 @@ if($env:WT_SESSION -and $env:TERM_PROGRAM -ne 'vscode')
     Set-PoshPrompt -Theme  ~/.oh-my-posh.omp.json
 }
 
+write-host "Import-Module posh-git"
+Import-Module posh-git
+
 Import-Module z
 
-function repos { Set-Location C:\Users\kaept\source }
+function src { Set-Location C:\Users\mh\source }
 
 function open-visual-studio() {
-    $solutions = Get-Childitem -Path .\ -Filter *.sln -Exclude src* -Recurse -File -Name
+  param(
+      [string]$path = './'
+    )
+    $solutions = Get-Childitem -Filter "$path*.sln"
+
+    $solutions | ForEach-Object { write-host " - $($_)" }
+
     if ($solutions.Count -eq 1) {
-      & $solutions
+      & $solutions.FullName
     }
     elseif ($solutions.Count -eq 0) {
       write-host "no solutions found"
     }
     elseif ($solutions.Count -gt 1) {
       write-host "found more than one solution"
-      $solutions | ForEach-Object { write-host " - $($_)" }
     }
   }
   
-  Set-Alias vs open-visual-studio
+Set-Alias vs open-visual-studio
