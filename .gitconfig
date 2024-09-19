@@ -3,7 +3,7 @@
 [difftool "vscode"]
     cmd = code --wait --diff $LOCAL $REMOTE
 [difftool "vsdiffmerge"]
-	cmd = \"C:\\Program Files (x86)\\Microsoft Visual Studio\\2019\\Professional\\Common7\\IDE\\CommonExtensions\\Microsoft\\TeamFoundation\\Team Explorer\\vsdiffmerge.exe\" \"$LOCAL\" \"$REMOTE\" //t
+	cmd = \"C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\Common7\\IDE\\IDE\\vsdiffmerge.exe\" \"$LOCAL\" \"$REMOTE\" //t
 [difftool "vsdiffmerge"]
 	keepBackup = false
 [merge]
@@ -11,14 +11,14 @@
 [mergetool]
 	prompt = true
 [mergetool "vsdiffmerge"]
-	cmd = \"C:\\Program Files (x86)\\Microsoft Visual Studio 14.0\\Common7\\IDE\\vsdiffmerge.exe\" \"$REMOTE\" \"$LOCAL\" \"$BASE\" \"$MERGED\" //m
+	cmd = \"C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\Common7\\IDE\\vsdiffmerge.exe\" \"$REMOTE\" \"$LOCAL\" \"$BASE\" \"$MERGED\" //m
 	trustexitcode = true
 [mergetool "vsdiffmerge"]
 	keepbackup = false
 [user]
-	name = Matthias Hillermeier
+	name = kaeptn
 [user]
-	email = m.hillermeier@adestis.de
+	email = kaeptn@outlook.com
 [alias]
     aa = add --all
     bv = branch -vv
@@ -46,7 +46,7 @@
 [credential]
 	helper = wincred
 [core]
-	editor = \"C:\\Users\\mh\\AppData\\Local\\Programs\\Microsoft VS Code\\bin\\code\" --wait
+	editor = \"C:\\Users\\kaept\\AppData\\Local\\Programs\\Microsoft VS Code\\bin\\code\" --wait
 [difftool]
 	prompt = true
 [credential "https://code.adestis.net"]

@@ -1,2 +1,2 @@
-repos() { cd /d/Projects/; }
-repos
+src() { cd /c/users/mh/source; }
+src
