@@ -1,0 +1,8 @@
+https://marketplace.visualstudio.com/items?itemName=MadsKristensen.AddNewFile64
+https://marketplace.visualstudio.com/items?itemName=MadsKristensen.CodeCleanupOnSave
+https://marketplace.visualstudio.com/items?itemName=MadsKristensen.WorkflowBrowser
+https://marketplace.visualstudio.com/items?itemName=MadsKristensen.insertguid
+https://marketplace.visualstudio.com/items?itemName=J-Flepp.JFleppVsThemeDarkYellow
+https://marketplace.visualstudio.com/items?itemName=54748ff9-45fc-43c2-8ec5-cf7912bc3b84.MappingGenerator2022
+https://marketplace.visualstudio.com/items?itemName=MadsKristensen.OpeninVisualStudioCode
+https://marketplace.visualstudio.com/items?itemName=NikolayBalakin.Outputenhancer
